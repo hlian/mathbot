@@ -1,0 +1,17 @@
+: 1420521174:0;tllocalmgr install hfbright
+: 1420521504:0;tllocalmgr install mathdesign
+: 1420521740:0;tllocalmgr install mdput
+: 1420521751:0;tllocalmgr install mathdesign
+: 1420521756:0;tllocalmgr install mdput
+: 1420521793:0;tllocalmgr install utopia
+: 1420522171:0;tllocalmgr install cmbright
+: 1420523274:0;tllocalmgr install diagrams
+: 1420523313:0;tllocalmgr install taylor
+: 1420523321:0;tllocalmgr install -v taylor
+: 1420523326:0;tllocalmgr install --verbose taylor
+
+## hashing
+sudo texconfig rehash
+
+## tllocalmgr
+: 1420519582:0;sudo aura -A texlive-localmanager-git
