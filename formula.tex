@@ -1,0 +1,28 @@
+\ifdefined\formula
+\else
+\def\formula{E = m c^2}
+\fi
+\documentclass[border=2pt]{standalone}
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{varwidth}
+\usepackage{microtype}
+\usepackage{diagrams}
+\begin{document}
+\begin{varwidth}{\linewidth}
+
+\begin{diagram}
+& & X & & \\
+& \ldTo^{f_1} & \dDashto_f & \rdTo^{f_2} & \\
+A & \lTo_{\pi_1} & A\times B & \rTo_{\pi_2} & B \\
+\end{diagram}
+
+\begin{diagram}
+& & X & & \\
+& \ruTo^{f_1} & \uDashto_f & \luTo^{f_2} & \\
+A & \rTo_{i_1} & A\oplus B & \lTo_{i_2} & B \\
+\end{diagram}
+
+\end{varwidth}
+\end{document}
