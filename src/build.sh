@@ -7,4 +7,4 @@ if [[ ! -f instance.tex ]]; then
 fi
 
 pdflatex -interaction=batch instance.tex
-convert -density 300 instance.pdf -quality 90 -resize 50% -sharpen 0 -fuzz 80% -trim +repage PNG32:formula.png
+convert -density 300 instance.pdf -quality 90 -resize 50% -sharpen 0 -fuzz 1% -trim +repage PNG32:formula.png
