@@ -67,7 +67,7 @@ mathbot cmd@(Just (Command "math" user channel (Just text))) = do
   write text (tmp <> "/input.tex")
   shell tmp "./src/build.sh"
   url <- maybe "oh no imgur" id <$> (upload (tmp <> "/formula.png"))
-  let formats = [FormatAt user, FormatLink url url]
+  let formats = [FormatAt user, FormatString ("`" <> text <> "`"), FormatLink url url]
   config <- configIO
   say (FormattedMessage (EmojiIcon "goat") "mathbot" channel formats) config
   return "ok"
